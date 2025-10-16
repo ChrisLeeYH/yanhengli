@@ -184,3 +184,4 @@ Welcome! I am Yanheng Li (李彦恒), a senior undergraduate student from the Sc
 
 Through these pursuits, I strive to contribute to the forefront of HCI and computational social science. My long-term research goal is to build a set of self-contained HCI framworks / tookits grounded by large data and experiments to help explain the features of information operation/diffusion, multimodal communication, and public opinion in the digital age, interacting with previous theories and methods, and ultimately pushing the boundaries of knowledge that help people better understand social media and broader human factors in computer systems.
 
+In my spare time, I play basketball 🏀 (more than 12 years), watch musicals, and play the flute 🪈.
