@@ -139,10 +139,11 @@ education:
 
 languages:
   - name: English (TOFEL:112)
-    # percent: 100
+    percent: 95
   - name: Chinese (native)
-    # percent: 50
-  - name: Taiwanness Hokkien (native)
+    percent: 100
+  - name: Taiwannese Hokkien (native)
+    percent: 100
 
 # Awards.
 #   Add/remove as many awards below as you like.
