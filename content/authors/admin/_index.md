@@ -23,7 +23,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Undergraudate student working in computer-mediated communication and HCI.
+role: Undergraudate student working on computer-mediated communication and HCI.
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
