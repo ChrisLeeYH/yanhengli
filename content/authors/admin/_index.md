@@ -1,6 +1,6 @@
 ---
 # Display name
-title: YANHENG LI 李彦恒
+title: YANHENG LI
 
 # Name pronunciation (optional)
 name_pronunciation: ''
@@ -175,7 +175,7 @@ awards:
 
 <span style="color:#FF574A">I am looking for a prospective phd position in hci, information science, or communication in 2026 Fall.</span>
 
-Welcome! I am a senior undergraduate student from the School of International Studies(SIS)/School of Philosophy, [<span style="color:#1a73e8;">Renmin University of China</span>](https://www.ruc.edu.cn/). My research interest lies broadly in Human Computer Interaction (HCI) and Computational Social Science (especially social media, trust and privacy, democracy, and Communications). Recently I have been drawn by the knowledge of political misinformation and information dynamics on social media. Here is a list of topics I am actively thinking about / working on: 
+Welcome! I am Yanheng Li (李彦恒), a senior undergraduate student from the School of International Studies(SIS)/School of Philosophy, [<span style="color:#1a73e8;">Renmin University of China</span>](https://www.ruc.edu.cn/). My research interest lies broadly in Human Computer Interaction (HCI) and Computational Social Science (especially social media, trust and privacy, democracy, and Communications). Recently I have been drawn by the knowledge of political misinformation and information dynamics on social media. Here is a list of topics I am actively thinking about / working on: 
 - **The Properties of Political Misinformation Online**: I am deeply engaged in exploring the properties of political misinformation on social media, corresponding to election topics. I believe that understanding the properties of political misinformation is crucial for enabling governments/society to detect misinformation and continually build a better platform for expressing public opinion.
 
 - **Public Opinion and Information on Social Media**: Intrigued by the inner mechanisms of the formation of public opinion (e.g. polarization, spiral of silence, dissemination), I aspire to uncover and examine the unique process discussed by different information science works by large empirical data and social experiments on social media. This investigation not only promises to inform the law of online opinion formation but also offers intriguing parallels for understanding information diffusion and online communities on social media to facilitate human leveraging media platforms and engineers improving the systems.
