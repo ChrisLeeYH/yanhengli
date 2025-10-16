@@ -11,9 +11,9 @@ authors:
 
 # Author notes (optional)
 author_notes:
-  - ''
-  - ''
-  - ''
+  - ""
+  - ""
+  - ""
 
 date: '2025-10-18T00:00:00Z'
 

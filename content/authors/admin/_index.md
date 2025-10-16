@@ -6,15 +6,15 @@ title: YANHENG LI
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: Yanheng
-last_name: Li
+first_name: YANHENG
+last_name: LI
 
 # Pronouns (optional)
 pronouns: he/him
 
 # Status emoji
 status:
-  icon: ✏️
+  icon: 
 
 # Is this the primary user of the site?
 superuser: true
