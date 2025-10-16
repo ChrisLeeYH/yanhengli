@@ -74,7 +74,7 @@ education:
   - area: LL.B. in Philosophy, Politics and Economics (PPE)
     institution: Renmin University of China
     date_start: 2022-09-01
-    date_end: 2026-06-31 (expected)
+    date_end: 2026-06-30 (expected)
     summary: |
       GPA: 3.8/4.0
 
