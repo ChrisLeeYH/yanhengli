@@ -3,7 +3,9 @@ title: "Where Do LLMs Go Wrong? Diagnosing Automated Peer Review via Aspect-Guid
 authors:
 - Jiatao Li
 - admin
-- et,al
+- Xinyu Hu
+- Mingqing Gao
+- Xiaojun Wan
 author_notes:
 - ""
 - ""

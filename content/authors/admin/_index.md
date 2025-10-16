@@ -6,8 +6,8 @@ title: YANHENG LI
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: YANEHNG
-last_name: LI
+first_name: Yanheng
+last_name: Li
 
 # Pronouns (optional)
 pronouns: he/him
