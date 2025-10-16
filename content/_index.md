@@ -108,9 +108,9 @@ sections:
       title: '📢 Recent News'
       subtitle: ''
       text: |-
-        ✈️ [Conference] <u> I am going to present my CSCW paper in person in Bergen, Norway! </u> 2025.10.
+        ✈️ [Conference] <u> I am going to present my CSCW paper in person in Bergen, Norway ! </u> 2025.10.
 
-        🏆 [Award] <u> Our CSCW 2025 paper, _Understanding Voter Fraud Misinformation Videos on YouTube during Taiwan 2024 Election_ wins the <span style="color:#FF574A"> _Impact Recognition Award_</span>! </u> 2025.10.
+        🏆 [Award] <u> Our CSCW 2025 paper, _Understanding Voter Fraud Misinformation Videos on YouTube during Taiwan 2024 Election_ wins the <span style="color:#FF574A"> _Impact Recognition Award_</span> ! </u> 2025.10.
 
         📑 [Paper] <u> The paper analyzing LLM bias in automated peer review is accepted in CIKM ! </u> 2025.08.
 
