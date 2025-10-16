@@ -134,9 +134,9 @@ education:
 
 # languages:
 #   - name: English
-#     percent: 100
-#   - name: Spanish
-#     percent: 50
+#     # percent: 100
+#   - name: Chinese
+#     # percent: 50
 
 # Awards.
 #   Add/remove as many awards below as you like.
