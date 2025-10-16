@@ -137,11 +137,12 @@ education:
 #         percent: 70
 #         icon: book-open
 
-# languages:
-#   - name: English
-#     # percent: 100
-#   - name: Chinese
-#     # percent: 50
+languages:
+  - name: English (TOFEL:112)
+    # percent: 100
+  - name: Chinese (native)
+    # percent: 50
+  - name: Taiwanness Hokkien (native)
 
 # Awards.
 #   Add/remove as many awards below as you like.
