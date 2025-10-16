@@ -29,7 +29,7 @@ summary:
 
 tags:
 - Source Themes
-featured: false
+featured: True
 
 hugoblox:
   ids:
