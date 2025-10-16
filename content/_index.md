@@ -73,35 +73,51 @@ sections:
   #         - events
   #   design:
   #     view: card
-  - block: collection
+  # - block: collection
+  #   id: news
+  #   content:
+  #     title: Recent News
+  #     subtitle: ''
+  #     text: ''
+  #     # Page type to display. E.g. post, talk, publication...
+  #     page_type: blog
+  #     # Choose how many pages you would like to display (0 = all pages)
+  #     count: 5
+  #     # Filter on criteria
+  #     filters:
+  #       author: ''
+  #       category: ''
+  #       tag: ''
+  #       exclude_featured: false
+  #       exclude_future: false
+  #       exclude_past: false
+  #       publication_type: ''
+  #     # Choose how many pages you would like to offset by
+  #     offset: 0
+  #     # Page order: descending (desc) or ascending (asc) date.
+  #     order: desc
+  #   design:
+  #     # Choose a layout view
+  #     view: citation
+  #     # Reduce spacing
+  #     spacing:
+  #       padding: [0, 0, 0, 0]
+  - block: markdown
     id: news
     content:
-      title: Recent News
+      title: '📢 Recent News'
       subtitle: ''
-      text: ''
-      # Page type to display. E.g. post, talk, publication...
-      page_type: blog
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 5
-      # Filter on criteria
-      filters:
-        author: ''
-        category: ''
-        tag: ''
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ''
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
+      text: |-
+        ✈️ [Conference] <u> I am going to present my CSCW paper in person in Bergen, Norway! </u> 2025.10.
+
+        🏆 [Award] <u> Our CSCW 2025 paper, _Understanding Voter Fraud Misinformation Videos on YouTube during Taiwan 2024 Election_ wins the <span style="color:#FF574A"> _Impact Recognition Award_</span>! </u> 2025.10.
+
+        📑 [Paper] <u> The paper analyzing LLM bias in automated peer review is accepted in CIKM ! </u> 2025.08.
+
+        📑 [Paper] <u> The paper analyzing voter fraud misinformation in Taiwan 2024 election is accepted in CSCW ! </u> 2025.08.
+
     design:
-      # Choose a layout view
-      view: citation
-      # Reduce spacing
-      spacing:
-        padding: [0, 0, 0, 0]
+      columns: '1'
   - block: cta-card
     demo: true # Only display this section in the Hugo Blox Builder demo site
     content:
