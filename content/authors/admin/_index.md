@@ -145,21 +145,21 @@ work:
 awards:
   - title: JD. “Qiushi Future Scholars” Student Research/Innovation Scholarship 
     # url: https://neurips.cc/
-    date: '2025-10'
+    date: '2025-10-15'
     awarder: Renmin University of China
     icon: hero/trophy
     summary: |
       10,000 CNY, for Top 1% undergraduate student in Renmin University of China.
   - title: ICBC Innovation Scholarship with "Innovation Star" Designation
     # url: https://www.nsf.gov/
-    date: '2025-04'
+    date: '2025-04-20'
     awarder: Industrial and Commercial Bank of China
     icon: hero/currency-dollar
     summary: |
       8,000 CNY, for Top 10/11,000+ in Renmin University of China.
   - title: Principal’s Scholarship for Excellent Exchange Student
     # url: https://www.stanford.edu/
-    date: '2024-10'
+    date: '2024-10-25'
     awarder: Renmin University of China
     icon: hero/academic-cap
     summary: |
