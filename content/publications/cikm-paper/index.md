@@ -32,7 +32,7 @@ tags:
 - Automated Peer Review
 - Bias Analysis
 
-featured: True
+featured: false
 
 hugoblox:
   ids:
