@@ -11,7 +11,7 @@ design:
 sections:
   - block: resume-biography-3
     content:
-      title: 'About'
+      # title: 'About'
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
       text: ''

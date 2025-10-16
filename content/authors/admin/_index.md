@@ -78,6 +78,11 @@ education:
     summary: |
       GPA: 3.8/4.0
 
+  - area: Erasmus Exchange Student in Data Science
+    institution: Luiss Guido Carli
+    date_start: 2024-09-01
+    date_end: 2025-02-01
+
 
 
 # work:
