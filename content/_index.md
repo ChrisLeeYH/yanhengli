@@ -51,7 +51,7 @@ sections:
           - publications
         featured_only: true
     design:
-      view: article-grid
+      view: card
       columns: 1
   # - block: collection
   #   content:
@@ -97,10 +97,10 @@ sections:
       order: desc
     design:
       # Choose a layout view
-      view: card
+      view: citation
       # Reduce spacing
-      spacing:
-        padding: [0, 0, 0, 0]
+      # spacing:
+      #   padding: [0, 0, 0, 0]
   - block: cta-card
     demo: true # Only display this section in the Hugo Blox Builder demo site
     content:
