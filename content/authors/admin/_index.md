@@ -163,7 +163,7 @@ awards:
     awarder: Industrial and Commercial Bank of China
     icon: hero/currency-dollar
     summary: |
-      8,000 CNY, for Top 10/11,000+ in Renmin University of China.
+      8,000 CNY, for Top 10/11,000+ undergraduate in Renmin University of China.
   - title: Principal’s Scholarship for Excellent Exchange Student
     # url: https://www.stanford.edu/
     date: '2024-10-25'
