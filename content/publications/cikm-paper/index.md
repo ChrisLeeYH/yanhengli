@@ -19,7 +19,7 @@ publishDate: "2025-10-15T00:00:00Z"
 publication_types: ["paper-conference"]
 
 # Publication name and optional abbreviated publication name.
-publication: "In *In Proceedings of the 34th ACM International Conference on Information and Knowledge Management "
+publication: "In *Proceedings of the 34th ACM International Conference on Information and Knowledge Management* "
 publication_short: "In *CIKM'25*"
 
 abstract: We introduce an aspect-guided perturbation framework to diagnose vulnerabilities of Large Language Models (LLMs) in peer review. By perturbing papers, reviews, and rebuttals along dimensions such as contribution, soundness, presentation, tone, and completeness, we reveal where LLM reviewers are most error-prone. Our analysis across major LLMs (GPT-4o, Gemini 2.0, LLaMA 3, etc) highlights recurring weaknesses, including misjudging methodological flaws, over-weighting strong rejections, mishandling incomplete rebuttals, and misinterpreting poor critiques as rigorous. These findings provide actionable insights for building balanced human–AI peer review partnerships.
@@ -41,20 +41,20 @@ hugoblox:
 links:
   - type: pdf
     url: https://arxiv.org/abs/2502.12510
-  - type: code
-    url: ""
-  - type: dataset
-    url: ""
-  - type: poster
-    url: ""
-  - type: project
-    url: ""
+  # - type: code
+  #   url: ""
+  # - type: dataset
+  #   url: ""
+  # - type: poster
+  #   url: ""
+  # - type: project
+  #   url: ""
   # - type: slides
   #   url: https://www.slideshare.net/
-  - type: source
-    url: ""
-  - type: video
-    url: ""
+  # - type: source
+  #   url: ""
+  # - type: video
+  #   url: ""
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
