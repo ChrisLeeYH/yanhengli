@@ -5,15 +5,15 @@ title: 'Understanding Voter Fraud Misinformation Videos on YouTube during Taiwan
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - Yanheng Li
+  - admin
   - Da Wang
   - Yuping Wang
 
 # Author notes (optional)
 author_notes:
   - ''
-  - 'Equal contribution'
-  - 'Equal contribution'
+  - 'Corresponding Author'
+  - 'Corresponding Author'
 
 date: '2025-10-18T00:00:00Z'
 
@@ -26,16 +26,18 @@ publishDate: '2025-10-16T00:00:00Z'
 publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Hugo Blox Builder Conference*
-publication_short: In *CSCW*
+publication: In *Proc. ACM Hum.-Comput. Interact. 9, 7, Article CSCW516*
+publication_short: In *CSCW'25*
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: This paper presents a mixed-method analysis of voter fraud misinformation on YouTube during Taiwan’s 2024 election. Using a computational pipeline and manual coding, we identify videos discussing ballot-related fraud claims. Our findings show that Democratic Progressive Party (DPP)-aligned accounts produced the most such content, which drew more comments but fewer likes than other videos. Case studies reveal distinct strategies: some media outlets and grassroots accounts promoted fraud claims, while DPP-linked channels often refuted them. This study sheds light on the dynamics of multi-modal voter fraud misinformation in Taiwan and informs global efforts to mitigate its spread.
 
 # Summary. An optional shortened abstract.
 summary: 
 
 tags:
-  - Large Language Models
+  - Misinformation
+  - Multimodal
+  - Social Media
 
 # Display this page in the Featured widget?
 featured: true
@@ -43,27 +45,27 @@ featured: true
 # Standard identifiers for auto-linking
 hugoblox:
   ids:
-    doi: 10.5555/123456
+    doi: 10.1145/3757697
 
 # Custom links
 links:
-  - type: pdf
+  - type: PDF
     url: ""
-  - type: code
+  - type: Medium Blog
     url: https://github.com/HugoBlox/hugo-blox-builder
-  - type: dataset
-    url: https://github.com/HugoBlox/hugo-blox-builder
+  # - type: dataset
+  #   url: https://github.com/HugoBlox/hugo-blox-builder
   - type: slides
     url: https://www.slideshare.net/
-  - type: source
-    url: https://github.com/HugoBlox/hugo-blox-builder
-  - type: video
-    url: https://youtube.com
+  # - type: source
+  #   url: https://github.com/HugoBlox/hugo-blox-builder
+  # - type: video
+  #   url: https://youtube.com
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+  caption: 'Image created by Nano Banana'
   focal_point: ''
   preview_only: false
 
@@ -72,8 +74,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects:
-  - example
+projects: ""
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
