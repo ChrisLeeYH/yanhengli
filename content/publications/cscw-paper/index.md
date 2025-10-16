@@ -50,7 +50,7 @@ hugoblox:
 # Custom links
 links:
   - type: PDF
-    url: "content/publications/cscw-paper/yanheng_taiwan_misinfo_cscw516.pdf"
+    url: "https://chrisleeyh.github.io/assets/papers/yanheng_taiwan_misinfo_cscw516.pdf"
   # - type: code
   #   url: https://github.com/HugoBlox/hugo-blox-builder
   # - type: dataset
@@ -79,7 +79,7 @@ projects: ""
 # Slides (optional).
 #   Associate this publication with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
-#   E.g. `slides: "example"` references `content/slides/example/index.md`.
+  # E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 slides: ""
 ---
