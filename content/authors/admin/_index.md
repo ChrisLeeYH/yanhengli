@@ -142,7 +142,7 @@ languages:
     percent: 95
   - name: Chinese (native)
     percent: 100
-  - name: Taiwannese Hokkien (native)
+  - name: Taiwanese Hokkien (native)
     percent: 100
 
 # Awards.
