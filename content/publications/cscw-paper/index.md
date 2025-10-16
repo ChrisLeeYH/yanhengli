@@ -91,6 +91,17 @@ slides: ""
 > Create your slides in Markdown - click the _Slides_ button to check out the example. -->
 
 <!-- Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). -->
-<span style="color:#FF574A"> _With Impact Recognition Award._</span>
+🎉 Our paper wins the <span style="color:#FF574A"> _Impact Recognition Award_</span> in CSCW 2025 ! 🎉
+
+This paper proposes a human-in-the-loop pipeline to analyze **5,000+** YouTube videos.
+- Including data collection, identification of voter-fraud videos, multi-modal and statistical analysis.
+- Applied a **human-in-the-loop pipeline** (transcripts and misinformation typology coding).  
+
+The analysis yields several findings;
+- Video accounts aligned with the Democratic Progressive Party (DPP) produce the highest number of videos discussing voter fraud misinformation.
+- Videos discussing such misinformation tend to receive more comments but fewer likes compared to videos without this content _(Engagement metrics comparison)_.
+- Voter-fraud Videos associated with the DPP are quite distinct from those linked to the Kuomintang (KMT) or Taiwan People's Party (TPP), with unique characteristics that may be further revealed through their audio and video features _(Multi-modal analysis and comparison of videos across publisher parties)_.
+- Voter-fraud videos by traditional media accounts tend to exhibit a more standardized tempo, higher brightness, greater visual complexity (entropy), and higher face presence compared to grassroots accounts _(Multi-modal analysis and comparison of videos across publisher types)_.
+- Case studies highlight several key divergences compared with voter fraud misinformation in the 2020 U.S. presidential election, particularly in terms of narrative strategies.
 
 Check the additional blog: [[<span style="color:#1a73e8;">_Medium Blog_</span>](https://medium.com/acm-cscw/how-voter-fraud-misinformation-spread-on-youtube-lessons-from-taiwans-2024-election-189cc15f4bc6)]
