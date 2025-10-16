@@ -156,14 +156,14 @@ awards:
     awarder: Renmin University of China
     icon: hero/trophy
     summary: |
-      10,000 CNY, for Top 1% undergraduate student in Renmin University of China.
+      10,000 CNY, for Top 0.3% undergraduate student in Renmin University of China.
   - title: ICBC Innovation Scholarship with "Innovation Star" Designation
     # url: https://www.nsf.gov/
     date: '2025-04-20'
     awarder: Industrial and Commercial Bank of China
     icon: hero/currency-dollar
     summary: |
-      8,000 CNY, for Top 10/11,000+ undergraduate in Renmin University of China.
+      8,000 CNY, for Top 10 undergraduate in Renmin University of China.
   - title: Principal’s Scholarship for Excellent Exchange Student
     # url: https://www.stanford.edu/
     date: '2024-10-25'
