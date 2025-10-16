@@ -49,7 +49,7 @@ hugoblox:
 
 # Custom links
 links:
-  - type: PDF
+  - type: pdf
     url: https://chrisleeyh.github.io/assets/papers/yanheng_taiwan_misinfo_cscw516.pdf
   # - type: code
   #   url: https://github.com/HugoBlox/hugo-blox-builder
