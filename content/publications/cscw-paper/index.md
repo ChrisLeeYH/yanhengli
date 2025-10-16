@@ -27,7 +27,7 @@ publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
 publication: In *Proc. ACM Hum.-Comput. Interact. 9, 7, Article CSCW516*
-publication_short: In *CSCW*
+publication_short: 
 
 abstract: This paper presents a mixed-method analysis of voter fraud misinformation on YouTube during Taiwan’s 2024 election. Using a computational pipeline and manual coding, we identify videos discussing ballot-related fraud claims. Our findings show that Democratic Progressive Party (DPP)-aligned accounts produced the most such content, which drew more comments but fewer likes than other videos. Case studies reveal distinct strategies: some media outlets and grassroots accounts promoted fraud claims, while DPP-linked channels often refuted them. This study sheds light on the dynamics of multi-modal voter fraud misinformation in Taiwan and informs global efforts to mitigate its spread.
 
@@ -51,8 +51,8 @@ hugoblox:
 links:
   - type: PDF
     url: ""
-  - type: Medium Blog
-    url: https://github.com/HugoBlox/hugo-blox-builder
+  # - type: code
+  #   url: https://github.com/HugoBlox/hugo-blox-builder
   # - type: dataset
   #   url: https://github.com/HugoBlox/hugo-blox-builder
   - type: slides
