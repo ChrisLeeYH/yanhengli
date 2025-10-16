@@ -50,13 +50,13 @@ hugoblox:
 # Custom links
 links:
   - type: PDF
-    url: ""
+    url: "content/publications/cscw-paper/yanheng_taiwan_misinfo_cscw516.pdf"
   # - type: code
   #   url: https://github.com/HugoBlox/hugo-blox-builder
   # - type: dataset
   #   url: https://github.com/HugoBlox/hugo-blox-builder
   - type: slides
-    url: https://www.slideshare.net/
+    url: https://drive.google.com/file/d/18hO3Il1RHqu3KA-akT_69JxraLkfQNg3/view?usp=drive_link
   # - type: source
   #   url: https://github.com/HugoBlox/hugo-blox-builder
   # - type: video
@@ -84,10 +84,13 @@ projects: ""
 slides: ""
 ---
 
-> [!NOTE]
-> Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+<!-- > [!NOTE]
+> Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software. -->
 
-> [!NOTE]
-> Create your slides in Markdown - click the _Slides_ button to check out the example.
+<!-- > [!NOTE]
+> Create your slides in Markdown - click the _Slides_ button to check out the example. -->
 
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
+<!-- Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/). -->
+<span style="color:#FF574A"> _With Impact Recognition Award._</span>
+
+Check the additional blog: [[<span style="color:#1a73e8;">_Medium Blog_</span>](https://medium.com/acm-cscw/how-voter-fraud-misinformation-spread-on-youtube-lessons-from-taiwans-2024-election-189cc15f4bc6)]
