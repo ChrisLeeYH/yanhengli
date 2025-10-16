@@ -34,9 +34,9 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        I am currently working on social media + HCI, applying observational study and quantitative methods. I fortunately have a first-author CSCW 2025 paper on voter-fraud misinformation in the 2024 Taiwan presidential election, and a CIKM 2025 co-author paper analyzing LLMs for peer review. 
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        My previous researches use human-in-the-loop and LLM-assisted pipelines to study YouTube media ecosystems, including amplifier behaviors in comment networks of 11k+ videos and 460k+ comments under political crisis (manuscript submitted), and misinformation in election contexts of 5k+ videos with multimodal analysis (forthcoming in CSCW 25).  I am also working on projects on LLM-based visual analysis for media images and TikTok “refugee” discourse on RedNote. 
 
         Please reach out to collaborate 😃
     design:
@@ -52,16 +52,16 @@ sections:
     design:
       view: article-grid
       columns: 2
-  - block: collection
-    content:
-      title: Recent Publications
-      text: ''
-      filters:
-        folders:
-          - publications
-        exclude_featured: false
-    design:
-      view: citation
+  # - block: collection
+  #   content:
+  #     title: Recent Publications
+  #     text: ''
+  #     filters:
+  #       folders:
+  #         - publications
+  #       exclude_featured: false
+  #   design:
+  #     view: citation
   # - block: collection
   #   id: talks
   #   content:
