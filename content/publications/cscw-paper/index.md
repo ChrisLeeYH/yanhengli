@@ -50,7 +50,7 @@ hugoblox:
 # Custom links
 links:
   - type: pdf
-    url: https://chrisleeyh.github.io/assets/papers/yanheng_taiwan_misinfo_cscw516.pdf
+    url: https://dl.acm.org/doi/pdf/10.1145/3757697
   # - type: code
   #   url: https://github.com/HugoBlox/hugo-blox-builder
   # - type: dataset
