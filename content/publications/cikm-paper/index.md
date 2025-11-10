@@ -38,11 +38,11 @@ featured: false
 
 hugoblox:
   ids:
-    arxiv: 2502.12510
+    doi: 10.1145/3746252.3761274
 
 links:
   - type: pdf
-    url: https://arxiv.org/abs/2502.12510
+    url: https://dl.acm.org/doi/pdf/10.1145/3746252.3761274
   # - type: code
   #   url: ""
   # - type: dataset
