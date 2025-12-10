@@ -19,8 +19,8 @@ publishDate: "2025-12-10T00:00:00Z"
 publication_types: ["paper-conference"]
 
 # Publication name and optional abbreviated publication name.
-publication: "In Submission "
-publication_short: "In Submission"
+publication: "Submitted"
+publication_short: "Submitted"
 
 abstract: Online discourse during public crises plays a significant role in shaping public perception, resource mobilization, and emergency response. While extensive research has examined crisis discourse on textual platforms like $\mathbb{X}$ and Facebook, video-based platforms remain significantly under-explored despite their increasing prominence in modern media consumption. This paper addresses this gap by investigating comment amplification on YouTube through a novel Human-LLM framework. Our method deploys a multi-stage pipeline where LLMs work in tandem with human collaboration to analyze the ecosystem of crisis response. Specifically, the framework classifies content into "featuring" videos (dedicated solely to the crisis) and "curating" videos (aggregating various snippets), identifies key comment amplifiers, and characterizes the semantic and interaction nature of amplified content. To validate this approach, we analyzed two distinct crises-- the December 2024 US Government Shutdown (political strife) and the January 2025 California Wildfires (natural disaster). The application of our framework yielded critical insights into platform-specific dynamics, detecting high levels of polarization during both crises and identifying potential malicious algorithm injection during the political strife. This study contributes a robust, scalable methodological toolkit for multimedia crisis informatics, demonstrating how Human-LLM analysis can decode complex engagement patterns in video comment sections that were previously difficult to quantify at scale.
 
