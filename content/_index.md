@@ -39,6 +39,8 @@ sections:
 
         My previous researches use human-in-the-loop and LLM-assisted pipelines to study YouTube media ecosystems, including amplifier behaviors in comment networks of 11k+ videos and 460k+ comments under political crisis (manuscript submitted), and misinformation in election contexts of 5k+ videos with multimodal analysis (in CSCW'25).  I am also working on projects on LLM-based visual analysis for media images and TikTok “refugee” discourse on RedNote. 
 
+        <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/0B5IGavODyAQchmQowV4kk/Yanheng-Li-s-Portfolio.?node-id=11-2810&embed-host=share" allowfullscreen></iframe>
+
         Please reach out to collaborate 😃
     design:
       columns: '1'
