@@ -173,7 +173,7 @@ awards:
       30,000 CNY, for excellent exchange student in Renmin University of China.
 ---
 
-<span style="color:#FF574A">I am looking for a prospective phd position in hci, information science, or communication in 2026 Fall.</span>
+<span style="color:#FF574A">I am about to join Northwestern University as a PhD student in Media, Techonology, and Society (MTS) in 2026 Fall !! </span>
 
 Welcome! I am Yanheng Li (李彦恒), a senior undergraduate student from the School of International Studies(SIS)/School of Philosophy, [<span style="color:#1a73e8;">Renmin University of China</span>](https://www.ruc.edu.cn/). My research interest lies broadly in Human Computer Interaction (HCI) and Computational Social Science (especially social media, trust and privacy, democracy, and Communications). Recently I have been drawn by the knowledge of political misinformation and information dynamics on social media. Here is a list of topics I am actively thinking about / working on: 
 - **The Properties of Political Misinformation Online**: I am deeply engaged in exploring the properties of political misinformation on social media, corresponding to election topics. I believe that understanding the properties of political misinformation is crucial for enabling governments/society to detect misinformation and continually build a better platform for expressing public opinion.
