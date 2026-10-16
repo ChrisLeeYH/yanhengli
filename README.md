@@ -1,125 +1,70 @@
-# [The Academic CV That Gets You Hired](https://github.com/HugoBlox/theme-academic-cv)
+# Yanheng Li · academic website
 
-[![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/academic-cv/start/?utm_source=github&utm_medium=readme)
+A responsive academic website for **https://chrisleeyh.github.io/yanhengli/**. Warm ivory, muted purple, serif typography, and concise editorial layouts. All pages are static HTML; JavaScript only enhances citation copying.
 
-<h1 align="center">Build an Academic CV and Resumé That Stands Out</h1>
+## Preview
 
-<p align="center">
-  <strong>Your unfair advantage in academia and tech.</strong><br/>
-  Showcase your work, boost your citations, and land your dream job at places like <strong>Meta, Google, and Stanford</strong>.
-</p>
+Requires **Node.js 22 or later**. No packages to install.
 
-<p align="center">
-  <a href="https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme"><b>🚀 Deploy Your Free CV in 60s</b></a>
-  &nbsp;•&nbsp;
-  <a href="https://hugoblox.com/templates/?open=academic-cv&loading=true&utm_source=github&utm_medium=readme">Live Demo</a>
-  &nbsp;•&nbsp;
-  <a href="https://hugoblox.com/pro?utm_source=github&utm_medium=readme"><b>✨ Upgrade to Pro</b></a>
-</p>
-
-<p align="center">
-  Trusted by 250,000+ researchers, students, and educators worldwide.
-</p>
-
-<p align="center">
-  <a href="https://discord.gg/z8wNYzb">
-    <img src="https://img.shields.io/discord/722225264733716590?label=Join%20Discord&style=social" alt="Discord">
-  </a>
-  <a href="https://github.com/HugoBlox/theme-academic-cv">
-    <img src="https://img.shields.io/github/stars/HugoBlox/theme-academic-cv?label=Star%20Academic%20CV&style=social" alt="GitHub Stars">
-  </a>
-</p>
-
----
-
-## Your Career Starts Here
-
-The Academic CV template is designed for impact. Whether you're an AI researcher, a recent graduate, or a seasoned professor, this is the last resumé you'll ever need.
-
-- **✍️ Showcase Your Expertise:** Easily write content with Markdown, Jupyter, or RStudio. Display your publications, talks, and projects in a stunning, professional layout.
-- **📈 Boost Your Citations:** Automatic BibTeX import and SEO-optimized pages mean your work gets discovered more easily, increasing your research impact.
-- **💼 Land Your Dream Job:** Create a memorable online presence that impresses recruiters from top tech firms and prestigious universities.
-- **🚀 Launch in Minutes:** No coding required. The Hugo Blox Builder lets you customize everything with drag-and-drop sections.
-
-<p align="center">
-  <a href="https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme">
-    <img src="https://img.shields.io/badge/⚡️%20Get%20Your%20CV%20in%2060s-ff4655?style=for-the-badge" alt="Deploy this template" width="400">
-  </a>
-</p>
-
----
-
-## Level Up with Pro Templates
-
-Ready to take your career to the next level? Our Pro templates offer exclusive designs and features to help you stand out even more.
-
-<!-- <p align="center">
-  <img src="" alt="Free vs Pro templates">
-</p>-->
-
-| Feature              | Academic CV (Free)       | Academic CV Pro & Resumé Pro     |
-| -------------------- | ------------------------ | -------------------------------- |
-| **Design**           | Professional & clean     | **Exclusive premium designs**    |
-| **Layouts**          | Standard resumé sections | **Advanced layouts & timelines** |
-| **Call to Action**   | Simple contact link      | **Prominent CTA buttons**        |
-| **First Impression** | Strong                   | **Unforgettable**                |
-
-<br/>
-<p align="center">
-  <a href="https://hugoblox.com/pro?utm_source=github&utm_medium=readme"><b>💎 Get the Pro Pass</b></a> — Includes all Pro templates for a one-time price.<br/>
-  <a href="https://hugoblox.com/templates/academic-cv-pro/start?utm_source=github&utm_medium=readme">✨ Deploy Academic CV Pro</a>
-  &nbsp;•&nbsp;
-  <a href="https://hugoblox.com/templates/resume-pro/start?utm_source=github&utm_medium=readme">📄 Deploy Resumé Pro</a>
-</p>
-
----
-
-## What Researchers Say
-
-> “Hugo Blox saved me 40+ hours on my lab site. BibTeX integration auto-updates publications — **our citations are up 3×**.”
-> — **Dr. Sarah Yang**, AI Researcher
-
----
-
-## Get Started in Minutes
-
-### Recommended (Fastest)
-
-Deploy your site to GitHub Pages in just 60 seconds with our browser-based starter.
-
-👉 <a href="https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme"><b>Start with the Academic CV Template</b></a>
-
-### Prefer the Command Line?
-
-Use the local quickstart:
-
-```bash
-# 1. Install Hugo Extended → https://docs.hugoblox.com/getting-started/install-hugo/
-# 2. Clone this starter
-git clone https://github.com/HugoBlox/theme-academic-cv my-site
-cd my-site
-
-# 3. Run locally
-pnpm install && hugo server
+```sh
+npm run dev
 ```
 
-For more guides, visit our documentation at **https://docs.hugoblox.com/**.
+Open **http://127.0.0.1:4173/yanhengli/**. Source changes rebuild automatically; refresh the browser to see them. The preview uses the same `/yanhengli/` prefix as GitHub Pages. Set `PORT=4174` if necessary.
 
----
+## Build and check
 
-## Join the Community
+```sh
+npm run build
+npm run check
+```
 
-Join thousands of creators in our vibrant community to ask questions, share your work, and help us improve.
+Output is in `public/`, which is ignored by Git. Checks cover internal links, fragments, assets, preserved URLs, and essential metadata. For a custom domain or another repository path:
 
-- 💬 <a href="https://discord.gg/z8wNYzb">Discord</a>
-- 📚 <a href="https://docs.hugoblox.com/?utm_source=github&utm_medium=readme">Docs & Guides</a>
-- 🐦 <a href="https://x.com/BuildLore">X / Twitter</a>
-- ⭐ <a href="https://github.com/HugoBlox/hugo-blox-builder">Star on GitHub</a>
+```sh
+npm run build -- --base-url https://example.org/
+npm run check
+```
 
----
+## Deploy to the original GitHub Pages site
 
-MIT © 2016-Present [George Cushen](https://georgecushen.com)
+1. Keep the existing repository: `ChrisLeeYH/yanhengli`.
+2. In **Settings → Pages → Build and deployment**, use **GitHub Actions** (the existing workflow also used this setting).
+3. Merge or push the changes to `main`. `.github/workflows/deploy.yml` builds, checks, uploads, and deploys `public/`. Pull requests build and validate without publishing.
+4. Check the **Deploy website to GitHub Pages** action. The URL remains **https://chrisleeyh.github.io/yanhengli/** unless a custom domain is configured.
 
-<!--START_SECTION:news-->
-<!--Updated at 2025-10-12T01:52:57.215Z-->
-<!--END_SECTION:news-->
+The workflow reads the URL from GitHub Pages, so assets and navigation support project URLs and custom domains. No Hugo, Go, Tailwind, npm dependencies, or external fonts are needed. GitHub still downloads its standard checkout/setup/deployment Actions.
+
+## Update content
+
+| File | Purpose |
+| --- | --- |
+| `data/site.json` | Bio, contact, research, news, education, publications, awards, service |
+| `static/images/portrait.jpg` | Existing portrait |
+| `static/uploads/resume.pdf` | Existing CV; March 2026 version |
+| `static/publications/*/cite.bib` | Downloadable citations |
+| `static/styles.css` | Layout, typography, responsive and print styles |
+| `scripts/build.mjs` | Page templates, metadata, sitemap, RSS |
+
+To add a publication, add an entry to `publications` in JSON and its BibTeX file. Use `type: "published"` only for confirmed peer-reviewed publications, and `"preprint"` otherwise. Update the `updated` date when changing content. Replace the PDF and `cvDate` together when a newer CV is ready.
+
+## Content and migration notes · October 2026
+
+- Updated to first-year Northwestern MTS Ph.D. student; RUC education marked complete.
+- The LL.B. degree label and institutional email follow the CV in the original repository.
+- CSCW and CIKM titles/authors follow the original BibTeX. The Social Worldview preprint follows [arXiv v2](https://arxiv.org/abs/2505.01967), revised December 29, 2025; it is not presented as an accepted paper.
+- The crisis-amplification study remains a working paper. No new acceptance, advisor relationship, or unpublished result is inferred.
+- The CV is retained unchanged and dated on the Experience page. It still contains pre-arrival wording; replace it when an updated PDF is ready.
+- Hugo Blox configuration, demo blog/course/project content, the Figma embed, duplicated publication sections, and template workflows were retired. Previous source remains in Git history.
+- Existing home, experience, publication, author-profile, CV, citation, and research-feed URLs are preserved. Placeholder demo pages are removed.
+- No third-party analytics, webfonts, or embedded frames are loaded.
+
+## Accessibility
+
+Semantic landmarks, skip navigation, visible keyboard focus, native citation disclosure, responsive layouts, reduced-motion support, descriptive portrait text, custom 404, and print styles are included. Citation copying has a manual fallback when clipboard permission is unavailable.
+
+## Verification for this revision
+
+The production build and internal-link checks passed at both `/yanhengli/` and `/`, covering nine HTML files and 144 internal links. JavaScript syntax and whitespace checks passed. The existing CV was verified byte-for-byte unchanged.
+
+This editing session could not start a preview server or access local HTML through the browser because of environment security restrictions. Desktop/mobile visual review and the GitHub-hosted Actions run remain to be verified. Run `npm run dev` locally to review the design before publishing.

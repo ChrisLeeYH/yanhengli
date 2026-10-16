@@ -1,0 +1,95 @@
+{
+  "name": "Yanheng Li",
+  "chineseName": "李彦恒",
+  "siteUrl": "https://chrisleeyh.github.io/yanhengli/",
+  "updated": "2026-10-16",
+  "email": "chrislee1067@outlook.com",
+  "institutionalEmail": "yanheng@u.northwestern.edu",
+  "scholar": "https://scholar.google.com/citations?user=M3YOdGgAAAAJ&hl=en",
+  "github": "https://github.com/ChrisLeeYH",
+  "cv": "uploads/resume.pdf",
+  "cvDate": "March 2026",
+  "description": "Yanheng Li is a Ph.D. student in Media, Technology, and Society at Northwestern University, studying political communication, misinformation, and AI-mediated communication.",
+  "bio": "I’m a first-year Ph.D. student in Media, Technology, and Society at Northwestern University. My research connects political communication, human–computer interaction, and computational social science, with a focus on misinformation and AI-mediated communication.",
+  "method": "I combine computational methods, multimodal analysis, and human-centered inquiry to study information and public opinion.",
+  "personal": "Away from research: basketball, musicals, and the flute.",
+  "research": [
+    {"title": "Politics & public opinion", "text": "How information spreads, gains visibility, and shapes public opinion across political contexts."},
+    {"title": "Multimodal misinformation", "text": "How images and videos—including AI-generated media—affect credibility and political beliefs."},
+    {"title": "AI-mediated communication", "text": "How the social orientations and limitations of AI shape the ways people communicate and evaluate information."}
+  ],
+  "news": [
+    {"date": "2026-09", "label": "Sep 2026", "text": "Joined Northwestern University as a Ph.D. student in Media, Technology, and Society."},
+    {"date": "2026-06", "label": "Jun 2026", "text": "Completed my undergraduate degree in Philosophy, Politics and Economics at Renmin University of China."},
+    {"date": "2025-10", "label": "Oct 2025", "text": "Our Taiwan election misinformation paper received the CSCW 2025 Impact Recognition Award.", "href": "publications/cscw-paper/"}
+  ],
+  "education": [
+    {"institution": "Northwestern University", "degree": "Ph.D. in Media, Technology, and Society", "dates": "2026–present", "location": "Evanston, Illinois"},
+    {"institution": "Renmin University of China", "degree": "LL.B. in Philosophy, Politics and Economics", "dates": "2022–2026", "location": "Beijing, China"},
+    {"institution": "Luiss Guido Carli", "degree": "Erasmus exchange in Data Science", "dates": "2024–2025", "location": "Rome, Italy"}
+  ],
+  "experience": [
+    {"institution": "Northwestern University", "title": "Computational communication", "text": "Research with Yingdan Lu on LLM-assisted visual analysis and discourse on RedNote."},
+    {"institution": "Renmin University of China", "title": "Social media & HCI", "text": "Research with Yuping Wang on election misinformation and the amplification of crisis discourse on YouTube."},
+    {"institution": "Renmin University of China & Peking University", "title": "Understanding language models", "text": "Collaborative work on automated peer review and the social worldviews encoded in large language models."}
+  ],
+  "awards": [
+    {"year": "2025", "title": "CSCW Impact Recognition Award", "organization": "ACM CSCW · Taiwan election misinformation paper"},
+    {"year": "2025", "title": "Qiushi Future Scholars Research Scholarship", "organization": "Renmin University of China"},
+    {"year": "2025", "title": "ICBC Innovation Scholarship · Innovation Star", "organization": "Renmin University of China"},
+    {"year": "2024", "title": "Outstanding Winner & COMAP Scholarship Award", "organization": "Interdisciplinary Contest in Modeling"}
+  ],
+  "service": ["Program committee reviewer, AAAI 2026."],
+  "publications": [
+    {
+      "slug": "cscw-paper",
+      "title": "Understanding Voter Fraud Misinformation Videos during the 2024 Taiwan Election on YouTube",
+      "authors": ["Yanheng Li", "Da Wang", "Yuping Wang"],
+      "year": 2025,
+      "date": "2025-10-18",
+      "type": "published",
+      "venue": "CSCW 2025",
+      "citation": "Proceedings of the ACM on Human-Computer Interaction, 9(7), Article CSCW516, 1–40.",
+      "award": "Impact Recognition Award",
+      "summary": "A mixed-method study of how partisan media discuss, circulate, and refute voter-fraud claims on YouTube.",
+      "abstract": "This study examines video-based voter-fraud misinformation during Taiwan’s 2024 election. A computational pipeline and manual coding identify relevant videos and their publishers’ political leanings. Multimodal and engagement analyses reveal differences across political camps and media types; qualitative case studies show how traditional and grassroots accounts promote or refute claims through distinct narrative strategies. The findings offer insight into the platform-specific and political dynamics of election misinformation.",
+      "links": [{"label": "Paper", "url": "https://doi.org/10.1145/3757697"}, {"label": "PDF", "url": "https://dl.acm.org/doi/pdf/10.1145/3757697"}, {"label": "Slides", "url": "https://drive.google.com/file/d/18hO3Il1RHqu3KA-akT_69JxraLkfQNg3/view"}, {"label": "CSCW blog", "url": "https://medium.com/acm-cscw/how-voter-fraud-misinformation-spread-on-youtube-lessons-from-taiwans-2024-election-189cc15f4bc6"}],
+      "bib": "publications/cscw-paper/cite.bib"
+    },
+    {
+      "slug": "cikm-paper",
+      "title": "Where Do LLMs Go Wrong? Diagnosing Automated Peer Review via Aspect-Guided Multi-Level Perturbation",
+      "authors": ["Jiatao Li", "Yanheng Li", "Xinyu Hu", "Mingqi Gao", "Xiaojun Wan"],
+      "year": 2025,
+      "date": "2025-11-10",
+      "type": "published",
+      "venue": "CIKM 2025",
+      "citation": "Proceedings of the 34th ACM International Conference on Information and Knowledge Management, 1572–1581.",
+      "summary": "Diagnosing the robustness and biases of LLM reviewers through controlled changes to papers, reviews, and rebuttals.",
+      "abstract": "An aspect-guided, multi-level perturbation framework probes the reliability of large language models in automated peer review. Controlled changes to papers, reviews, and rebuttals test responses to contribution, soundness, presentation, tone, and completeness. The analysis identifies recurring weaknesses in evaluating methodological flaws, strong rejections, incomplete rebuttals, and poor critiques, informing the design of human–AI peer-review partnerships.",
+      "links": [{"label": "Paper", "url": "https://doi.org/10.1145/3746252.3761274"}, {"label": "PDF", "url": "https://dl.acm.org/doi/pdf/10.1145/3746252.3761274"}],
+      "bib": "publications/cikm-paper/cite.bib"
+    },
+    {
+      "slug": "llm-worldviews",
+      "title": "Analyzing Cognitive Differences Among Large Language Models through the Lens of Social Worldview",
+      "authors": ["Jiatao Li", "Yanheng Li", "Xiaojun Wan"],
+      "year": 2025,
+      "date": "2025-12-29",
+      "type": "preprint",
+      "venue": "arXiv preprint · 2025",
+      "citation": "arXiv:2505.01967. Revised December 2025.",
+      "summary": "Examining models’ orientations toward hierarchy, equality, individuality, and fate—and their responses to social cues.",
+      "abstract": "The Social Worldview Taxonomy, grounded in Cultural Theory, operationalizes hierarchy, egalitarianism, individualism, and fatalism to examine the socio-cognitive orientations encoded in large language models. Evaluation across 28 models reveals distinct profiles, while experiments informed by Social Referencing Theory examine how explicit social cues modulate those profiles. The work explores the flexibility of model worldviews and its implications for socially responsible AI.",
+      "links": [{"label": "arXiv", "url": "https://arxiv.org/abs/2505.01967"}, {"label": "PDF", "url": "https://arxiv.org/pdf/2505.01967"}],
+      "bib": "publications/llm-worldviews/cite.bib"
+    }
+  ],
+  "workingPaper": {
+    "slug": "crisis-paper-submission",
+    "title": "A Human-LLM Framework for Analyzing Amplified Crisis Comments on YouTube",
+    "authors": ["Yanheng Li", "Da Wang", "Yuping Wang"],
+    "summary": "Combining human interpretation, language models, and network analysis to understand how crisis conversations are amplified on video platforms.",
+    "status": "Working paper"
+  }
+}
