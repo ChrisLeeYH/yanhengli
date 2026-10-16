@@ -25,7 +25,7 @@ function navItem(label, href, key, current) {
 
 function shell(title, content, { route = '', active = '', description = site.description, article = false, noindex = false } = {}) {
   const absolute = new URL(route, base).href;
-  const schema = article ? null : { '@context': 'https://schema.org', '@type': 'Person', name: site.name, alternateName: site.chineseName, url: base.href, image: new URL('images/portrait.jpg', base).href, jobTitle: 'Ph.D. student', affiliation: { '@type': 'CollegeOrUniversity', name: 'Northwestern University' }, sameAs: [site.scholar, site.github] };
+  const schema = article ? null : { '@context': 'https://schema.org', '@type': 'Person', name: site.name, alternateName: site.chineseName, url: base.href, image: new URL('images/portrait.jpg', base).href, jobTitle: 'Ph.D. student', affiliation: { '@type': 'CollegeOrUniversity', name: 'Northwestern University' }, sameAs: [site.scholar, site.github, site.x] };
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -79,7 +79,7 @@ const home = `<section class="hero wrap" id="about" aria-labelledby="name">
   <h1 id="name">Yanheng Li<span class="chinese-name" lang="zh-Hans">李彦恒</span></h1>
   <p class="hero-statement">Understanding information.<br><em>Understanding belief.</em></p>
   <p class="bio">${e(site.bio)}</p>
-  <div class="hero-links">${link('Email', `mailto:${site.email}`, 'button')}${link('Google Scholar', site.scholar)}${link('Curriculum vitae', site.cv)}</div>
+  <div class="hero-links">${link('Email', `mailto:${site.email}`, 'button')}${link('Google Scholar', site.scholar)}${link('X', site.x)}${link('Curriculum vitae', site.cv)}</div>
   </div>
   <aside class="profile-note"><div class="portrait-frame"><img src="${url('images/portrait.jpg')}" width="276" height="276" alt="Portrait of Yanheng Li" fetchpriority="high"></div>
   <div class="profile-caption"><span class="small-label">Currently</span><p>Ph.D. student<br>Northwestern University</p><span class="location"><span aria-hidden="true">↳</span> Evanston, Illinois</span></div>
@@ -96,7 +96,7 @@ const home = `<section class="hero wrap" id="about" aria-labelledby="name">
 </section>
 <section class="section wrap news-section" id="news" aria-labelledby="news-title"><div><p class="section-number">03 / Along the way</p><h2 id="news-title">Recent <em>news.</em></h2></div><div class="news-list">${site.news.map(n => `<div class="news-row"><time datetime="${n.date}">${e(n.label)}</time><p>${n.href ? `<a href="${url(n.href)}">${e(n.text)}</a>` : e(n.text)}</p></div>`).join('')}</div></section>
 <section class="section wrap background-section" aria-labelledby="background-title"><div class="section-heading"><div><p class="section-number">04 / Background</p><h2 id="background-title">A few <em>coordinates.</em></h2></div>${link('Experience & service', 'experience/', 'text-link')}</div><div class="education-list">${education()}</div><p class="personal-note">${e(site.personal)}</p></section>
-<section class="contact-section" aria-labelledby="contact-title"><div class="wrap contact-inner"><div><p class="eyebrow">Let’s connect</p><h2 id="contact-title">Good research starts<br>with a <em>conversation.</em></h2><p>I’m always glad to connect with people thinking about communication, politics, and AI.</p></div><div class="contact-links">${link(site.email, `mailto:${site.email}`)}${link('Northwestern email', `mailto:${site.institutionalEmail}`)}${link('Google Scholar', site.scholar)}</div></div></section>`;
+<section class="contact-section" aria-labelledby="contact-title"><div class="wrap contact-inner"><div><p class="eyebrow">Let’s connect</p><h2 id="contact-title">Good research starts<br>with a <em>conversation.</em></h2><p>I’m always glad to connect with people thinking about communication, politics, and AI.</p></div><div class="contact-links">${link(site.email, `mailto:${site.email}`)}${link('Northwestern email', `mailto:${site.institutionalEmail}`)}${link('Google Scholar', site.scholar)}${link('X', site.x)}</div></div></section>`;
 
 async function page(route, html) {
   const target = path.join(output, route, 'index.html');
