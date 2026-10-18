@@ -2,7 +2,7 @@
   "name": "Yanheng Li",
   "chineseName": "李彦恒",
   "siteUrl": "https://chrisleeyh.github.io/yanhengli/",
-  "updated": "2026-10-16",
+  "updated": "2026-10-18",
   "email": "chrislee1067@outlook.com",
   "institutionalEmail": "yanheng@u.northwestern.edu",
   "scholar": "https://scholar.google.com/citations?user=M3YOdGgAAAAJ&hl=en",
@@ -11,7 +11,13 @@
   "cv": "uploads/resume.pdf",
   "cvDate": "March 2026",
   "description": "Yanheng Li is a Ph.D. student in Media, Technology, and Society at Northwestern University, studying political communication, misinformation, and AI-mediated communication.",
-  "bio": "I’m a first-year Ph.D. student in Media, Technology, and Society at Northwestern University. My research connects political communication, human–computer interaction, and computational social science, with a focus on misinformation and AI-mediated communication.",
+  "bio": [
+    "I’m a first-year Ph.D. student in Media, Technology, and Society at Northwestern University. I’m advised by ",
+    {"text": "Prof. Erik Nisbet", "url": "https://communication.northwestern.edu/faculty/erik-nisbet.html"},
+    " and affiliated with Northwestern’s ",
+    {"text": "Center for Communication & Public Policy (CCPP)", "url": "https://polcomm.northwestern.edu/"},
+    ". My research connects political communication, human–computer interaction, and computational social science, with a focus on misinformation and AI-mediated communication."
+  ],
   "method": "I combine computational methods, multimodal analysis, and human-centered inquiry to study information and public opinion.",
   "personal": "Away from research: basketball, musicals, and the flute.",
   "research": [

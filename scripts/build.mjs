@@ -14,6 +14,7 @@ const e = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;',
 const url = value => /^(https?:|mailto:)/.test(value) ? value : `${base.pathname}${value.replace(/^\//, '')}`;
 const arrow = '<span aria-hidden="true">↗</span>';
 const link = (label, href, cls = '') => `<a${cls ? ` class="${cls}"` : ''} href="${e(url(href))}">${e(label)} ${arrow}</a>`;
+const bio = site.bio.map(part => typeof part === 'string' ? e(part) : `<a href="${e(url(part.url))}">${e(part.text)}</a>`).join('');
 const authors = names => names.map(name => name === site.name ? `<strong>${e(name)}</strong>` : e(name)).join(', ');
 const year = site.updated.slice(0, 4);
 const updatedLabel = new Intl.DateTimeFormat('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(`${site.updated}T00:00:00Z`));
@@ -78,7 +79,7 @@ const home = `<section class="hero wrap" id="about" aria-labelledby="name">
   <div class="hero-copy"><p class="eyebrow">Communication · Technology · Society</p>
   <h1 id="name">Yanheng Li<span class="chinese-name" lang="zh-Hans">李彦恒</span></h1>
   <p class="hero-statement">Understanding information.<br><em>Understanding belief.</em></p>
-  <p class="bio">${e(site.bio)}</p>
+  <p class="bio">${bio}</p>
   <div class="hero-links">${link('Email', `mailto:${site.email}`, 'button')}${link('Google Scholar', site.scholar)}${link('X', site.x)}${link('Curriculum vitae', site.cv)}</div>
   </div>
   <aside class="profile-note"><div class="portrait-frame"><img src="${url('images/portrait.jpg')}" width="276" height="276" alt="Portrait of Yanheng Li" fetchpriority="high"></div>
@@ -129,7 +130,7 @@ await page('experience/', shell('Experience & education', experience, { route: '
 
 // Keep the original author profile URL usable without duplicating profile content.
 const authorRoute = 'authors/admin/';
-await page(authorRoute, shell('About', `<div class="wrap inner-page"><p class="eyebrow">About</p><h1>${e(site.name)}</h1><p class="page-intro">${e(site.bio)}</p>${link('Visit my homepage', '')}</div>`, { route: '', noindex: true }));
+await page(authorRoute, shell('About', `<div class="wrap inner-page"><p class="eyebrow">About</p><h1>${e(site.name)}</h1><p class="page-intro">${bio}</p>${link('Visit my homepage', '')}</div>`, { route: '', noindex: true }));
 await writeFile(path.join(output, '404.html'), shell('Page not found', `<div class="wrap inner-page not-found"><p class="eyebrow">404</p><h1>A little <em>off the map.</em></h1><p>This page may have moved. You can find my latest research and contact details on the homepage.</p>${link('Back to the homepage', '', 'button')}</div>`, { noindex: true }));
 await writeFile(path.join(output, '.nojekyll'), '');
 await writeFile(path.join(output, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${new URL('sitemap.xml', base).href}\n`);
