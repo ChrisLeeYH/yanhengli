@@ -53,7 +53,10 @@
     {"date": "Oct 2025", "title": "28th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW)", "location": "Bergen, Norway"},
     {"date": "Jul 2024", "title": "Annual Conference of the Academic Community of Political Science and International Relations", "location": "Beijing, China"}
   ],
-  "service": ["Reviewer, AAAI and ICA, 2026."],
+  "service": [
+    "Reviewer, AAAI and ICA, 2026.",
+    "Student Fellow, Center of Data Science, Renmin University of China, 2025–2026."
+  ],
   "skills": [
     {"label": "Programming", "items": ["R", "Python", "Stata", "SQL", "LaTeX"]},
     {"label": "Computational tools", "items": ["NLP", "multimodal analysis", "web scraping", "LLM fine-tuning", "Gephi"]},
