@@ -41,7 +41,7 @@ The workflow reads the URL from GitHub Pages, so assets and navigation support p
 | --- | --- |
 | `data/site.json` | Bio, contact, research, news, education, publications, awards, service |
 | `static/images/portrait.jpg` | Existing portrait |
-| `static/uploads/resume.pdf` | Current CV; October 2026 version |
+| `static/uploads/resume.pdf` | Current CV; November 2026 version |
 | `static/publications/*/cite.bib` | Downloadable citations |
 | `static/styles.css` | Layout, typography, responsive and print styles |
 | `scripts/build.mjs` | Page templates, metadata, sitemap, RSS |
@@ -54,7 +54,7 @@ To add a publication, add an entry to `publications` in JSON and its BibTeX file
 - The LL.B. degree label and institutional email follow the CV in the original repository.
 - CSCW and CIKM titles/authors follow the original BibTeX. The Social Worldview preprint follows [arXiv v2](https://arxiv.org/abs/2505.01967), revised December 29, 2025; it is not presented as an accepted paper.
 - The crisis-amplification study remains a working paper. No new acceptance, advisor relationship, or unpublished result is inferred.
-- The CV was replaced on October 25, 2026 with the supplied two-page PDF and is dated on the Experience page.
+- The CV was replaced on November 25, 2026 with the supplied two-page PDF and is dated on the Experience page.
 - Hugo Blox configuration, demo blog/course/project content, the Figma embed, duplicated publication sections, and template workflows were retired. Previous source remains in Git history.
 - Existing home, experience, publication, author-profile, CV, citation, and research-feed URLs are preserved. Placeholder demo pages are removed.
 - No third-party analytics, webfonts, or embedded frames are loaded.
