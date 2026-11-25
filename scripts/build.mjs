@@ -75,6 +75,11 @@ function education() {
   return site.education.map(item => `<div class="education-row"><div><h3>${e(item.institution)}</h3><p>${e(item.degree)}</p></div><div class="education-date">${e(item.dates)}<span>${e(item.location)}</span></div></div>`).join('');
 }
 
+function currentWork(work) {
+  const title = work.slug ? `<a href="${url(`publications/${work.slug}/`)}">${e(work.title)}</a>` : e(work.title);
+  return `<article class="working-paper"><p class="small-label">${e(work.type === 'preprint' ? 'arXiv preprint' : work.status || 'Work in progress')}</p><h3>${title}</h3>${work.authors ? `<p class="authors">${authors(work.authors)}</p>` : ''}${work.note ? `<p class="paper-summary">${e(work.note)}</p>` : ''}${work.links ? `<div class="paper-links">${work.links.map(l => link(l.label, l.url)).join('')}${link('BibTeX', work.bib)}</div>` : ''}</article>`;
+}
+
 const home = `<section class="hero wrap" id="about" aria-labelledby="name">
   <div class="hero-copy"><p class="eyebrow">Communication · Technology · Society</p>
   <h1 id="name">Yanheng Li<span class="chinese-name" lang="zh-Hans">李彦恒</span></h1>
@@ -93,11 +98,11 @@ const home = `<section class="hero wrap" id="about" aria-labelledby="name">
 <section class="section wrap papers-section" id="papers" aria-labelledby="papers-title">
   <div class="section-heading"><div><p class="section-number">02 / Selected work</p><h2 id="papers-title">Publications <em>& preprints.</em></h2></div>${link('View all research', 'publications/', 'text-link')}</div>
   <div class="publication-list">${site.publications.map(publication).join('')}</div>
-  <div class="ongoing"><p class="small-label">In progress</p><div><h3>${e(site.workingPaper.title)}</h3><p>${e(site.workingPaper.summary)}</p></div>${link('Details', `publications/${site.workingPaper.slug}/`)}</div>
+  <div class="ongoing"><p class="small-label">Current work</p><div><h3>${site.workingPapers.length + site.publications.filter(p => p.type === 'preprint').length} working papers · ${site.worksInProgress.length} projects in progress</h3><p>Research on crisis discussions, political livestreaming, rumor debunking, and AI-edited misinformation.</p></div>${link('View current work', 'publications/#working-papers')}</div>
 </section>
 <section class="section wrap news-section" id="news" aria-labelledby="news-title"><div><p class="section-number">03 / Along the way</p><h2 id="news-title">Recent <em>news.</em></h2></div><div class="news-list">${site.news.map(n => `<div class="news-row"><time datetime="${n.date}">${e(n.label)}</time><p>${n.href ? `<a href="${url(n.href)}">${e(n.text)}</a>` : e(n.text)}</p></div>`).join('')}</div></section>
 <section class="section wrap background-section" aria-labelledby="background-title"><div class="section-heading"><div><p class="section-number">04 / Background</p><h2 id="background-title">A few <em>coordinates.</em></h2></div>${link('Experience & service', 'experience/', 'text-link')}</div><div class="education-list">${education()}</div><p class="personal-note">${e(site.personal)}</p></section>
-<section class="contact-section" aria-labelledby="contact-title"><div class="wrap contact-inner"><div><p class="eyebrow">Let’s connect</p><h2 id="contact-title">Good research starts<br>with a <em>conversation.</em></h2><p>I’m always glad to connect with people thinking about communication, politics, and AI.</p></div><div class="contact-links">${link(site.email, `mailto:${site.email}`)}${link('Northwestern email', `mailto:${site.institutionalEmail}`)}${link('Google Scholar', site.scholar)}${link('X', site.x)}</div></div></section>`;
+<section class="contact-section" aria-labelledby="contact-title"><div class="wrap contact-inner"><div><p class="eyebrow">Let’s connect</p><h2 id="contact-title">Good research starts<br>with a <em>conversation.</em></h2><p>I’m always glad to connect with people thinking about communication, politics, and AI.</p></div><div class="contact-links">${link(site.email, `mailto:${site.email}`)}${link('Google Scholar', site.scholar)}${link('X', site.x)}</div></div></section>`;
 
 async function page(route, html) {
   const target = path.join(output, route, 'index.html');
@@ -111,7 +116,7 @@ await mkdir(output, { recursive: true });
 await cp(path.join(root, 'static'), output, { recursive: true });
 await page('', shell('', home, { active: 'home' }));
 
-const publicationPage = `<div class="wrap inner-page"><p class="eyebrow">Research</p><h1>Publications <em>& preprints.</em></h1><p class="page-intro">Work on misinformation, digital platforms, and the social dimensions of AI.</p><h2 class="group-title">Peer-reviewed publications</h2>${site.publications.filter(p => p.type === 'published').map(publication).join('')}<h2 class="group-title">Preprints</h2>${site.publications.filter(p => p.type === 'preprint').map(publication).join('')}<h2 class="group-title">Working papers</h2><article class="working-paper"><h3><a href="${url(`publications/${site.workingPaper.slug}/`)}">${e(site.workingPaper.title)}</a></h3><p class="authors">${authors(site.workingPaper.authors)}</p><p>${e(site.workingPaper.summary)}</p></article></div>`;
+const publicationPage = `<div class="wrap inner-page"><p class="eyebrow">Research</p><h1>Publications <em>& current work.</em></h1><p class="page-intro">Research in political communication, computer-mediated communication, and misinformation.</p><h2 class="group-title">Peer-reviewed publications</h2>${site.publications.filter(p => p.type === 'published').map(publication).join('')}<section aria-labelledby="working-papers"><h2 class="group-title" id="working-papers">Working papers</h2>${[...site.workingPapers, ...site.publications.filter(p => p.type === 'preprint')].map(currentWork).join('')}</section><section aria-labelledby="work-in-progress"><h2 class="group-title" id="work-in-progress">Selected works in progress</h2>${site.worksInProgress.map(currentWork).join('')}</section></div>`;
 await page('publications/', shell('Publications', publicationPage, { route: 'publications/', active: 'publications' }));
 
 for (const p of site.publications) {
@@ -121,11 +126,17 @@ for (const p of site.publications) {
   await page(route, shell(p.title, content, { route, active: 'publications', description: p.summary, article: true }));
 }
 
-const work = site.workingPaper;
-const workRoute = `publications/${work.slug}/`;
-await page(workRoute, shell(work.title, `<article class="wrap article-page">${link('All publications', 'publications/', 'back-link')}<p class="eyebrow">${e(work.status)}</p><h1>${e(work.title)}</h1><p class="article-authors">${authors(work.authors)}</p><div class="article-text"><h2>Overview</h2><p>${e(work.summary)}</p><p>This ongoing project studies comment amplification during public crises on YouTube. It brings human interpretation together with LLM-assisted content analysis and network methods to examine the relationships among videos, commenters, and publishers.</p><p>For more information about this work, ${link('get in touch', `mailto:${site.email}`)}.</p></div></article>`, { route: workRoute, active: 'publications', description: work.summary, article: true }));
+// Preserve the old URL without assuming which current manuscript it represents.
+const workRoute = 'publications/crisis-paper-submission/';
+await page(workRoute, shell('Current research', `<article class="wrap article-page"><p class="eyebrow">Research updates</p><h1>Current <em>working papers.</em></h1><div class="article-text"><p>My current manuscripts and projects are listed on the research page.</p>${link('View current working papers', 'publications/#working-papers', 'button')}</div></article>`, { route: workRoute, active: 'publications', noindex: true }));
 
-const experience = `<div class="wrap inner-page experience-page"><p class="eyebrow">Background</p><h1>Experience <em>& education.</em></h1><p class="page-intro">My work draws on communication, social science, and computational methods.</p><div class="cv-note">${link('Download CV', site.cv)}<span>PDF · ${e(site.cvDate)}</span></div><section aria-labelledby="education-title"><h2 id="education-title" class="group-title">Education</h2>${education()}</section><section aria-labelledby="experience-title"><h2 id="experience-title" class="group-title">Research experience</h2>${site.experience.map(x => `<div class="experience-row"><p class="small-label">${e(x.institution)}</p><h3>${e(x.title)}</h3><p>${e(x.text)}</p></div>`).join('')}</section><section aria-labelledby="awards-title"><h2 id="awards-title" class="group-title">Selected recognition</h2>${site.awards.map(a => `<div class="award-row"><span>${a.year}</span><div><h3>${e(a.title)}</h3><p>${e(a.organization)}</p></div></div>`).join('')}</section><section aria-labelledby="service-title"><h2 id="service-title" class="group-title">Service</h2>${site.service.map(s => `<p>${e(s)}</p>`).join('')}</section></div>`;
+const experience = `<div class="wrap inner-page experience-page"><p class="eyebrow">Background</p><h1>Experience <em>& education.</em></h1><p class="page-intro">Education, grants, recognition, and academic service.</p><div class="cv-note">${link('Download CV', site.cv)}<span>PDF · ${e(site.cvDate)}</span></div>
+<section aria-labelledby="education-title"><h2 id="education-title" class="group-title">Education</h2>${education()}</section>
+<section aria-labelledby="grants-title"><h2 id="grants-title" class="group-title">Grants</h2>${site.grants.map(g => `<div class="award-row"><span>${e(g.year)}</span><div><h3>${e(g.title)}</h3><p>${e(g.organization)}</p></div></div>`).join('')}</section>
+<section aria-labelledby="awards-title"><h2 id="awards-title" class="group-title">Awards & honors</h2>${site.awards.map(a => `<div class="award-row"><span>${e(a.year)}</span><div><h3>${e(a.title)}</h3><p>${e(a.organization)}</p></div></div>`).join('')}</section>
+<section aria-labelledby="conferences-title"><h2 id="conferences-title" class="group-title">Conferences & presentations</h2>${site.conferences.map(c => `<div class="award-row"><span>${e(c.date)}</span><div><h3>${e(c.title)}</h3><p>${e(c.location)}</p></div></div>`).join('')}</section>
+<section aria-labelledby="service-title"><h2 id="service-title" class="group-title">Academic service</h2>${site.service.map(s => `<p>${e(s)}</p>`).join('')}</section>
+<section aria-labelledby="skills-title"><h2 id="skills-title" class="group-title">Skills</h2>${site.skills.map(s => `<div class="experience-row"><h3>${e(s.label)}</h3><p>${e(s.items.join(' · '))}</p></div>`).join('')}</section></div>`;
 await page('experience/', shell('Experience & education', experience, { route: 'experience/', active: 'experience' }));
 
 // Keep the original author profile URL usable without duplicating profile content.
@@ -134,7 +145,7 @@ await page(authorRoute, shell('About', `<div class="wrap inner-page"><p class="e
 await writeFile(path.join(output, '404.html'), shell('Page not found', `<div class="wrap inner-page not-found"><p class="eyebrow">404</p><h1>A little <em>off the map.</em></h1><p>This page may have moved. You can find my latest research and contact details on the homepage.</p>${link('Back to the homepage', '', 'button')}</div>`, { noindex: true }));
 await writeFile(path.join(output, '.nojekyll'), '');
 await writeFile(path.join(output, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${new URL('sitemap.xml', base).href}\n`);
-await writeFile(path.join(output, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${routes.filter(r => r !== authorRoute).map(r => `<url><loc>${e(new URL(r, base).href)}</loc><lastmod>${site.updated}</lastmod></url>`).join('')}</urlset>`);
+await writeFile(path.join(output, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${routes.filter(r => r !== authorRoute && r !== workRoute).map(r => `<url><loc>${e(new URL(r, base).href)}</loc><lastmod>${site.updated}</lastmod></url>`).join('')}</urlset>`);
 const feed = `<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>${e(site.name)} — Research</title><link>${e(base.href)}</link><description>${e(site.description)}</description>${[...site.publications].sort((a,b) => b.date.localeCompare(a.date)).map(p => `<item><title>${e(p.title)}</title><link>${e(new URL(`publications/${p.slug}/`, base).href)}</link><guid>${e(new URL(`publications/${p.slug}/`, base).href)}</guid><description>${e(p.summary)}</description><pubDate>${new Date(`${p.date}T00:00:00Z`).toUTCString()}</pubDate></item>`).join('')}</channel></rss>`;
 await writeFile(path.join(output, 'index.xml'), feed);
 await writeFile(path.join(output, 'publications/index.xml'), feed);

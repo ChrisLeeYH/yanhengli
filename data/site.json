@@ -3,50 +3,62 @@
   "chineseName": "李彦恒",
   "siteUrl": "https://chrisleeyh.github.io/yanhengli/",
   "updated": "2026-11-25",
-  "email": "chrislee1067@outlook.com",
-  "institutionalEmail": "yanheng@u.northwestern.edu",
+  "email": "yanheng@u.northwestern.edu",
   "scholar": "https://scholar.google.com/citations?user=M3YOdGgAAAAJ&hl=en",
   "github": "https://github.com/ChrisLeeYH",
   "x": "https://x.com/chrislee1067",
   "cv": "uploads/resume.pdf",
   "cvDate": "November 2026",
-  "description": "Yanheng Li is a Ph.D. student in Media, Technology, and Society at Northwestern University, studying political communication, misinformation, and AI-mediated communication.",
+  "description": "Yanheng Li is a Ph.D. student in Media, Technology, and Society at Northwestern University, studying political communication, computer-mediated communication, and misinformation.",
   "bio": [
     "I’m a first-year Ph.D. student in Media, Technology, and Society at Northwestern University. I’m advised by ",
     {"text": "Prof. Erik Nisbet", "url": "https://communication.northwestern.edu/faculty/erik-nisbet.html"},
     " and affiliated with Northwestern’s ",
     {"text": "Center for Communication & Public Policy (CCPP)", "url": "https://polcomm.northwestern.edu/"},
-    ". My research connects political communication, human–computer interaction, and computational social science, with a focus on misinformation and AI-mediated communication."
+    ". My primary research interests are political communication, computer-mediated communication, and misinformation. My secondary interests are human–AI interaction, computer vision, and natural language processing."
   ],
-  "method": "I combine computational methods, multimodal analysis, and human-centered inquiry to study information and public opinion.",
+  "method": "My secondary interests are human–AI interaction, computer vision, and natural language processing.",
   "personal": "Away from research: basketball, musicals, and the flute.",
   "research": [
-    {"title": "Politics & public opinion", "text": "How information spreads, gains visibility, and shapes public opinion across political contexts."},
-    {"title": "Multimodal misinformation", "text": "How images and videos—including AI-generated media—affect credibility and political beliefs."},
-    {"title": "AI-mediated communication", "text": "How the social orientations and limitations of AI shape the ways people communicate and evaluate information."}
+    {"title": "Political communication", "text": "Soft propaganda, group-directed affect, and rumor debunking in political contexts."},
+    {"title": "Computer-mediated communication", "text": "Shared expression, audience response, and repeated participation in online crisis discussions."},
+    {"title": "Misinformation", "text": "Election misinformation and credibility perceptions of AI-edited images."}
   ],
   "news": [
     {"date": "2026-09", "label": "Sep 2026", "text": "Joined Northwestern University as a Ph.D. student in Media, Technology, and Society."},
-    {"date": "2026-06", "label": "Jun 2026", "text": "Completed my undergraduate degree in Philosophy, Politics and Economics at Renmin University of China."},
+    {"date": "2026-06", "label": "Jun 2026", "text": "Completed my LL.B. in Politics, Economics and Philosophy (PPE) at Renmin University of China."},
     {"date": "2025-10", "label": "Oct 2025", "text": "Our Taiwan election misinformation paper received the CSCW 2025 Impact Recognition Award.", "href": "publications/cscw-paper/"}
   ],
   "education": [
-    {"institution": "Northwestern University", "degree": "Ph.D. in Media, Technology, and Society", "dates": "2026–present", "location": "Evanston, Illinois"},
-    {"institution": "Renmin University of China", "degree": "LL.B. in Philosophy, Politics and Economics", "dates": "2022–2026", "location": "Beijing, China"},
+    {"institution": "Northwestern University", "degree": "Ph.D. in Media, Technology, and Society", "dates": "2026–2031 (expected)", "location": "Evanston, Illinois"},
+    {"institution": "Renmin University of China", "degree": "LL.B. in Politics, Economics and Philosophy (PPE)", "dates": "2022–2026", "location": "Beijing, China"},
     {"institution": "Luiss Guido Carli", "degree": "Erasmus exchange in Data Science", "dates": "2024–2025", "location": "Rome, Italy"}
   ],
-  "experience": [
-    {"institution": "Northwestern University", "title": "Computational communication", "text": "Research with Yingdan Lu on LLM-assisted visual analysis and discourse on RedNote."},
-    {"institution": "Renmin University of China", "title": "Social media & HCI", "text": "Research with Yuping Wang on election misinformation and the amplification of crisis discourse on YouTube."},
-    {"institution": "Renmin University of China & Peking University", "title": "Understanding language models", "text": "Collaborative work on automated peer review and the social worldviews encoded in large language models."}
+  "grants": [
+    {"year": "2025", "title": "Undergraduate Academic Grant", "organization": "Renmin University of China · CNY 8,100"},
+    {"year": "2025", "title": "Student Research Grant", "organization": "Renmin University of China · CNY 5,000"},
+    {"year": "2024", "title": "International Organization Talent Program Grant", "organization": "Renmin University of China · CNY 10,000"}
   ],
   "awards": [
-    {"year": "2025", "title": "CSCW Impact Recognition Award", "organization": "ACM CSCW · Taiwan election misinformation paper"},
-    {"year": "2025", "title": "Qiushi Future Scholars Research Scholarship", "organization": "Renmin University of China"},
-    {"year": "2025", "title": "ICBC Innovation Scholarship · Innovation Star", "organization": "Renmin University of China"},
-    {"year": "2024", "title": "Outstanding Winner & COMAP Scholarship Award", "organization": "Interdisciplinary Contest in Modeling"}
+    {"year": "2025", "title": "CSCW Impact Recognition", "organization": "For top papers that demonstrate real-world impact"},
+    {"year": "2025", "title": "JD. “Qiushi Future Scholars” Student Research Scholarship", "organization": "Renmin University of China · CNY 10,000"},
+    {"year": "2025", "title": "ICBC Innovation Scholarship, “Innovation Star” designation", "organization": "Renmin University of China · CNY 8,000 · Top 10 among 11,000+ students"},
+    {"year": "2024", "title": "Principal’s Scholarship for Excellent Exchange Student", "organization": "Renmin University of China · CNY 30,000"},
+    {"year": "2024", "title": "Student Academic Award", "organization": "Renmin University of China · CNY 5,000 · Top 2%"},
+    {"year": "2024", "title": "International COMAP Scholarship Award", "organization": "1st-place winner among 28,912 teams · US $10,000 · Outstanding Winner, Interdisciplinary Contest in Mathematical Modeling"},
+    {"year": "2024", "title": "First Prize, RUC Innovation Cup", "organization": "26th Academic Work Competition, Renmin University of China · Top 10%"}
   ],
-  "service": ["Program committee reviewer, AAAI 2026."],
+  "conferences": [
+    {"date": "Nov 2025", "title": "34th ACM International Conference on Information and Knowledge Management (CIKM)", "location": "Seoul, South Korea"},
+    {"date": "Oct 2025", "title": "28th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW)", "location": "Bergen, Norway"},
+    {"date": "Jul 2024", "title": "Annual Conference of the Academic Community of Political Science and International Relations", "location": "Beijing, China"}
+  ],
+  "service": ["Reviewer, AAAI and ICA, 2026."],
+  "skills": [
+    {"label": "Programming", "items": ["R", "Python", "Stata", "SQL", "LaTeX"]},
+    {"label": "Computational tools", "items": ["NLP", "multimodal analysis", "web scraping", "LLM fine-tuning", "Gephi"]},
+    {"label": "Languages", "items": ["Mandarin (native)", "Taiwanese Hokkien (native)", "English (proficient)", "French (basic)", "Italian (basic)"]}
+  ],
   "publications": [
     {
       "slug": "cscw-paper",
@@ -92,11 +104,13 @@
       "bib": "publications/llm-worldviews/cite.bib"
     }
   ],
-  "workingPaper": {
-    "slug": "crisis-paper-submission",
-    "title": "A Human-LLM Framework for Analyzing Amplified Crisis Comments on YouTube",
-    "authors": ["Yanheng Li", "Da Wang", "Yuping Wang"],
-    "summary": "Combining human interpretation, language models, and network analysis to understand how crisis conversations are amplified on video platforms.",
-    "status": "Working paper"
-  }
+  "workingPapers": [
+    {"title": "Shared Expression and Audience Response in YouTube Crisis Discussions", "authors": ["Yanheng Li", "Da Wang", "Yuping Wang"], "status": "Under review"},
+    {"title": "Crisis News is Sticky: Repeated Participation in YouTube News Comments During a Political Crisis", "authors": ["Yanheng Li", "Da Wang", "Yuping Wang"], "status": "Under review"},
+    {"title": "When Travel Becomes Political: Soft Propaganda and Group-Directed Affect in Mainland China and Taiwan Cross-Strait Livestreaming", "authors": ["Yanheng Li"], "status": "Working paper"}
+  ],
+  "worksInProgress": [
+    {"title": "Authoritarian Coordinative Rumor Debunking", "note": "With Erik Nisbet"},
+    {"title": "Photorealism in AI-Editing Misinformation Images and Human Credibility Perceptions"}
+  ]
 }

@@ -39,21 +39,22 @@ The workflow reads the URL from GitHub Pages, so assets and navigation support p
 
 | File | Purpose |
 | --- | --- |
-| `data/site.json` | Bio, contact, research, news, education, publications, awards, service |
+| `data/site.json` | Bio, contact, interests, news, education, publications, working papers, projects, grants, awards, conferences, service, skills |
 | `static/images/portrait.jpg` | Existing portrait |
 | `static/uploads/resume.pdf` | Current CV; November 2026 version |
 | `static/publications/*/cite.bib` | Downloadable citations |
 | `static/styles.css` | Layout, typography, responsive and print styles |
 | `scripts/build.mjs` | Page templates, metadata, sitemap, RSS |
 
-To add a publication, add an entry to `publications` in JSON and its BibTeX file. Use `type: "published"` only for confirmed peer-reviewed publications, and `"preprint"` otherwise. Update the `updated` date when changing content. Replace the PDF and `cvDate` together when a newer CV is ready.
+The supplied November 2026 CV is the source for current profile facts and research status. Keep primary and secondary interests distinct. Add peer-reviewed publications and linked preprints to `publications` with their BibTeX files; use `type: "published"` only for confirmed peer-reviewed work and `"preprint"` for preprints. Add other manuscripts to `workingPapers` and selected ongoing projects to `worksInProgress`. Use “Under review” only where the CV states it. Update `updated` when content changes, and replace the PDF and `cvDate` together when a newer CV is ready.
 
-## Content and migration notes · October 2026
+## Content and migration notes · November 2026
 
-- Updated to first-year Northwestern MTS Ph.D. student; RUC education marked complete.
-- The LL.B. degree label and institutional email follow the CV in the original repository.
+- The bio, primary contact email, education, interests, grants, honors, conferences, service, and skills follow the November 2026 CV. Existing portrait, social links, and personal interests are retained.
+- Northwestern’s Ph.D. dates are 2026–2031 (expected); the Renmin degree is LL.B. in Politics, Economics and Philosophy (PPE).
 - CSCW and CIKM titles/authors follow the original BibTeX. The Social Worldview preprint follows [arXiv v2](https://arxiv.org/abs/2505.01967), revised December 29, 2025; it is not presented as an accepted paper.
-- The crisis-amplification study remains a working paper. No new acceptance, advisor relationship, or unpublished result is inferred.
+- Research lists distinguish two peer-reviewed publications, four working papers (including the arXiv preprint), and two selected works in progress. Only the two crisis manuscripts are labeled under review.
+- The original `publications/crisis-paper-submission/` URL links visitors to the current working papers. It is not treated as a title change for any particular manuscript. Old research-experience descriptions absent from the latest CV are no longer presented as current projects.
 - The CV was replaced on November 25, 2026 with the supplied two-page PDF and is dated on the Experience page.
 - Hugo Blox configuration, demo blog/course/project content, the Figma embed, duplicated publication sections, and template workflows were retired. Previous source remains in Git history.
 - Existing home, experience, publication, author-profile, CV, citation, and research-feed URLs are preserved. Placeholder demo pages are removed.
@@ -63,8 +64,8 @@ To add a publication, add an entry to `publications` in JSON and its BibTeX file
 
 Semantic landmarks, skip navigation, visible keyboard focus, native citation disclosure, responsive layouts, reduced-motion support, descriptive portrait text, custom 404, and print styles are included. Citation copying has a manual fallback when clipboard permission is unavailable.
 
-## Verification for this revision
+## Verification
 
-The production build and internal-link checks passed at both `/yanhengli/` and `/`, covering nine HTML files and 144 internal links. JavaScript syntax and whitespace checks passed. The CV replacement preserves the supplied PDF byte-for-byte.
+Run `npm run build` and `npm run check` before publishing. Check both the default `/yanhengli/` base path and a root-domain build when changing routing. Use `node --check scripts/build.mjs` and `git diff --check` for syntax and whitespace checks. Keep the supplied CV PDF unchanged.
 
-This editing session could not start a preview server or access local HTML through the browser because of environment security restrictions. Desktop/mobile visual review and the GitHub-hosted Actions run remain to be verified. Run `npm run dev` locally to review the design before publishing.
+Review the homepage, publications, and experience pages at desktop and mobile widths. After publishing, confirm the GitHub Actions deployment succeeds and the public pages and CV download are accessible without sign-in.
